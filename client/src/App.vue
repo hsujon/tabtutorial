@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <page-header />
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/register">Register</router-link>
@@ -7,7 +8,15 @@
     <router-view />
   </div>
 </template>
-
+<script>
+import PageHeader from "@/components/Header.vue";
+export default {
+  name: "app",
+  components: {
+    PageHeader
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
