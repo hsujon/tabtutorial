@@ -7,7 +7,7 @@
     </div>
     <router-view />
   </div>
-</template>
+</template>                       
 <script>
 import PageHeader from "@/components/Header.vue";
 export default {
